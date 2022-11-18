@@ -1,0 +1,60 @@
+{
+  "name": "vue3-flutterwave",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "jsdom": "^20.0.2",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vite-plugin-dts": "^1.7.1",
+    "vue-tsc": "^1.0.9"
+  },
+  "files": [
+    "dist",
+    "dist/**/*.d.ts"
+  ],
+  "main": "./dist/flutterwave.umd.js",
+  "module": "./dist/flutterwave.es.js",
+  "exports": {
+    "import": "./dist/flutterwave.es.js",
+    "require": "./dist/flutterwave.umd.js"
+  },
+  "types": "dist/flutterwave.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuelhenshaw2020/vue3-flutterwave.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuelhenshaw2020/vue3-flutterwave/issues"
+  },
+  "author": {
+    "name": "Samuel Henshaw"
+  },
+  "keywords": [
+    "flutterwave",
+    "Vue",
+    "Vuejs",
+    "Vue 3",
+    "Payment Gateway",
+    "Payment",
+    "Online Payment"
+  ],
+  "description": "Vue3 package for integrating to Flutter Payment Gateway to recieve payments",
+  "engines": {
+    "node": ">=10"
+  },
+  "homepage": "https://github.com/samuelhenshaw2020/vue3-flutterwave#readme",
+  "access": "public",
+  "license": "MIT"
+}
